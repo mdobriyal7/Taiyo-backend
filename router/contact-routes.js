@@ -89,6 +89,8 @@ async function getContact(req, res, next) {
   } catch (err) {
     return res.status(500).json({ message: err.message });
   }
+  res.contact = contact;
+  next();
 }
 
 module.exports = router;
