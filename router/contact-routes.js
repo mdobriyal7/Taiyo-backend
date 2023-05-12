@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const Contact = require("../models/contact");
+const Contact = require("../model/contact");
 
 // Get all contacts
 router.get("/contacts", async (req, res) => {
